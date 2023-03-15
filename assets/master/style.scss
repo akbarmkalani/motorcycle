@@ -1,0 +1,94 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap');
+
+  *{
+    box-sizing: border-box;
+  }
+  li{
+    list-style-type: none;
+  }
+main{
+    font-family: 'Outfit', sans-serif;
+    background-color: aliceblue;
+}
+.figure-box{
+    background-color: #FFFFFFFF;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow:1px 1px 12px .7px  #170d32;
+    >img{
+        &:nth-of-type(1){
+            transition: transform .8s ease-in-out;
+   
+            border-radius: 10px;
+             transform: perspective(1000px) rotateY(0deg); 
+        }
+        &:nth-of-type(2){
+       /*      height: 80%; */
+            top: -40px;left: 0;
+            backface-visibility: hidden;
+            transform: perspective(1000px) rotateY(180deg);
+            transition: transform .8s ease-in-out;
+        }
+    }
+    >figcaption{
+        .cart{
+            height: 60px !important;
+            top: 50%;
+            left: 50%;
+           transform: translate(-50%, 60%) translateX(-160%);
+           border-radius: 20px;
+           background-color:  #C72222 !important;
+           transition: .4s;
+           animation:  anima1 2s;
+           cursor: pointer;
+           >p{
+            font-size: 20px;
+           }
+        }
+       >.pris{
+        z-index: 22;
+        >section{
+            >.star{
+                >i{
+                    color: yellow;
+                    &:last-child{
+                        color: #abb3ba;
+                    }
+                }
+            }
+        }
+       }
+        >.icon-heart{
+            top: 10px;right:-12px;
+            transform: translateX(70px);
+            transition: .4s;
+           >div{
+            >i{
+                color: #C72222;
+                font-size: 30px;
+                cursor: pointer;
+            }
+           }
+        }
+    }
+}
+footer{
+    background: linear-gradient(45deg, #170d32, #3a59c7)!important ;
+    border-radius: 10px;
+    >ul{
+        >li{
+            cursor: pointer;
+            >a{
+                i{
+                    font-size: 40px;
+                    color: #000;
+                    transition: .4s linear;
+                  &:hover{
+                    color: #ffffffff;
+                  }
+                }
+            }
+        }
+    }
+}

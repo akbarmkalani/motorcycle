@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@500&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+li {
+  list-style-type: none;
+}
+
+main {
+  font-family: "Outfit", sans-serif;
+  background-color: aliceblue;
+}
+
+.figure-box {
+  background-color: white;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 1px 1px 12px 0.7px #170d32;
+}
+.figure-box > img:nth-of-type(1) {
+  transition: transform 0.8s ease-in-out;
+  border-radius: 10px;
+  transform: perspective(1000px) rotateY(0deg);
+}
+.figure-box > img:nth-of-type(2) {
+  /*      height: 80%; */
+  top: -40px;
+  left: 0;
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+  transform: perspective(1000px) rotateY(180deg);
+  transition: transform 0.8s ease-in-out;
+}
+.figure-box > figcaption .cart {
+  height: 60px !important;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 60%) translateX(-160%);
+  border-radius: 20px;
+  background-color: #C72222 !important;
+  transition: 0.4s;
+  animation: anima1 2s;
+  cursor: pointer;
+}
+.figure-box > figcaption .cart > p {
+  font-size: 20px;
+}
+.figure-box > figcaption > .pris {
+  z-index: 22;
+}
+.figure-box > figcaption > .pris > section > .star > i {
+  color: yellow;
+}
+.figure-box > figcaption > .pris > section > .star > i:last-child {
+  color: #abb3ba;
+}
+.figure-box > figcaption > .icon-heart {
+  top: 10px;
+  right: -12px;
+  transform: translateX(70px);
+  transition: 0.4s;
+}
+.figure-box > figcaption > .icon-heart > div > i {
+  color: #C72222;
+  font-size: 30px;
+  cursor: pointer;
+}
+
+footer {
+  background: linear-gradient(45deg, #170d32, #3a59c7) !important;
+  border-radius: 10px;
+}
+footer > ul > li {
+  cursor: pointer;
+}
+footer > ul > li > a i {
+  font-size: 40px;
+  color: #000;
+  transition: 0.4s linear;
+}
+footer > ul > li > a i:hover {
+  color: white;
+}
+
+.titel-card > h1 {
+  font-size: 40px;
+}
+
+/* @keyframes anima1{
+    0%{
+
+    }
+    20%{
+        opacity: 0;
+    }
+    50%{
+        opacity: 0;
+    }
+    60%{
+        opacity: 0;
+    }
+    70%{
+        opacity: .3;
+    }
+    100%{
+        opacity: 1;
+    }
+} *//*# sourceMappingURL=style.css.map */
